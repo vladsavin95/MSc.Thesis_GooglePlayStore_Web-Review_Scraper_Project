@@ -25,7 +25,7 @@ wordcloud==1.8.1
 	- max_words: Currently there are just 200 words selected to appear in a wordcloud. You can increase or decrease. 
 	IMPORTANT: don't forget to save changes if not the script will give an error or not the right information will be scrapped
 
-4: Run script. Once you run at the bottom check for: Input filename results. In the box input the name of the app you are scrapping (THIS IS VERY IMPORTANT WHEN OVERVIEWING THE RESULTS - Point 5)
+4: Run script. Once you run at the bottom check for: Input filename results. In the box input the name of the app you are scrapping (THIS IS VERY IMPORTANT WHEN OVERVIEWING THE RESULTS - Point 5) (However this feature is hidden)
 	- make sure you input the app name
 
 	- Chrome browser will open and the scrolling will start. IMPORTANT: make sure you keep Chrome in full screen mode like it opened
