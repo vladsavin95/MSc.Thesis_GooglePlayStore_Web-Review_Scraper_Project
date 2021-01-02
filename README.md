@@ -6,7 +6,8 @@ This is the set of instructions that will need to be followed for the scarapper 
 
 1. make sure you have all the needed libraries installed
 To intall libraries use "pip install libraryname"
-Suggested libraries to install: matplotlib;numpy; beautifulsoup4; selenium; vaderSentiment; wordcloud.
+Suggested libraries to install: matplotlib;numpy; beautifulsoup4; selenium; vaderSentiment; wordclou; nltk.
+Versions: 
 matplotlib==3.3.1
 numpy==1.19.3
 beautifulsoup4==4.9.3
@@ -17,13 +18,27 @@ wordcloud==1.8.1
 2. Open the notebook Main in Jupiter or any other channel you use.
 
 3. Open config file here you can do the following:
-	- change application link please make sure the link ends with "&showAllReviews=true". This can be done after selecting your app when in Google Play Store by clicking on "Read all Reviews"
+	- add after { on below line "link": "insert app link in this part",
+	- make sure the link ends with "&showAllReviews=true". This can be done after selecting your app when in Google Play Store by clicking on "Read all Reviews"
+	- Example: "link": "https://play.google.com/store/apps/details?id=com.sololearn.python&showAllReviews=true",
+	- add for shape of mask (wordcloud shape): "mask": "img/love.png",
+	
+	-JSON Config Should like this after changes:
+				{
+				  "link": "https://play.google.com/store/apps/details?id=com.sololearn.python&showAllReviews=true",
+				  "show_more_count": 2,
+				  "background_color": "black",
+				  "mask": "img/love.png",
+				  "max_words": 200
+				}
 	
 	- wordcloud colour: make sure you choose a colour that suits you best (recommended not black)
 	- mask: in "img" folder you can find all the masks to change how the wordcloud looks like
 
 	- max_words: Currently there are just 200 words selected to appear in a wordcloud. You can increase or decrease. 
 	IMPORTANT: don't forget to save changes if not the script will give an error or not the right information will be scrapped
+	
+	####Now you can run the app on the Jupiter Notebook.
 
 4: Run script. Once you run at the bottom check for: Input filename results. In the box input the name of the app you are scrapping (THIS IS VERY IMPORTANT WHEN OVERVIEWING THE RESULTS - Point 5) (However this feature is hidden)
 	- make sure you input the app name
